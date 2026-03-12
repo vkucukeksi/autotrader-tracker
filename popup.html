@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoTrader Time Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 AutoTrader Tracker</h1>
+    
+    <div class="stats">
+      <div class="stat-box">
+        <label>Total Time Spent</label>
+        <div id="totalTime" class="time-display">0h 0m</div>
+      </div>
+      
+      <div class="stat-box">
+        <label>Today</label>
+        <div id="todayTime" class="time-display">0h 0m</div>
+      </div>
+      
+      <div class="stat-box">
+        <label>Sessions</label>
+        <div id="sessionCount" class="time-display">0</div>
+      </div>
+    </div>
+    
+    <div class="sessions-list">
+      <h3>Recent Sessions</h3>
+      <div id="sessionsList" class="sessions"></div>
+    </div>
+    
+    <button id="resetBtn" class="btn-reset">Reset Data</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
